@@ -1,12 +1,12 @@
 # Neo4j Causal Cluster
 
-This compose example has been built to help developers to test their applications with a neo4j cluster. This cluster uses the Neo4j official images (3.5.3) enterprise. Please review the l[license information](https://neo4j.com/licensing/) before use this project.
+This compose example has been built to help developers test their applications with a neo4j cluster. This cluster uses the Neo4j official images (3.5.3) enterprise. Please review the [license information](https://neo4j.com/licensing/) before using this project.
 
-Also, the project provides Prometheus and grafana, Prometheus is scrapping metrics from the neo4j servers.
+Also, the project provides Prometheus and Grafana - Prometheus is scraping metrics from the neo4j servers.
 
 ## Starting the cluster
 
-This project use a compose file vs 3.x that requires docker engine: 1.13.0+, 17.04.0+.
+This project use a [Docker Compose](https://docs.docker.com/compose/) file vs 3.x that requires docker engine: 1.13.0+, 17.04.0+.
 
 Start you environment with:
 
@@ -20,13 +20,13 @@ Access the cluster nodes at:
 * [node2](http://localhost:7475/browser/)
 * [node3](http://localhost:7476/browser/)
 
-Using `neo4j/opencredo` as user/password, please change the password after loging using:
+Using `neo4j/opencredo` as user/password, please change the password after logging in using:
 
 ```none
     :server change-password
 ```
 
-This project uses a compose file vs 3.x that requires docker engine: 1.13.0+, 17.04.0+.
+This project uses a Docker Compose file v 3.x that requires docker engine: 1.13.0+, 17.04.0+.
 
 Start your environment with:
 
