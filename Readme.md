@@ -1,14 +1,14 @@
 # Neo4j Causal Cluster
 
-This compose enviroment enable developers to test they applications with a neo4j cluster. This cluster use the Neo4j official images (3.5.3) enterprise. Please review the [license information](https://neo4j.com/licensing/) before use this project.
+This compose example has been built to help developers to test their applications with a neo4j cluster. This cluster uses the Neo4j official images (3.5.3) enterprise. Please review the l[license information](https://neo4j.com/licensing/) before use this project.
 
-In addition project provides prometheus and graphana, prometheus is scrapping metrics from the neo4j servers.
+Also, the project provides Prometheus and grafana, Prometheus is scrapping metrics from the neo4j servers.
 
 ## Starting the cluster
 
-This project use a compose file vs 3.x that requires docker engine 	1.13.0+, 17.04.0+.
+This project use a compose file vs 3.x that requires docker engine: 1.13.0+, 17.04.0+.
 
-Start you enviroment with:
+Start you environment with:
 
 ```bash
     docker-compose up
@@ -26,9 +26,9 @@ Using `neo4j/opencredo` as user/password, please change the password after login
     :server change-password
 ```
 
-Please change the password for all the servers at the cluster.
+This project uses a compose file vs 3.x that requires docker engine: 1.13.0+, 17.04.0+.
 
-To review the cluster topology neo4j provide a set of management functions:
+Start your environment with:
 
 ```cypher
     CALL dbms.cluster.overview
@@ -36,7 +36,7 @@ To review the cluster topology neo4j provide a set of management functions:
 
 ## Monitoring
 
-Prometheus is running [locally](http://localhost:9090/graph), you will need to configure a datasource in [graphana](http://localhost:3000/) to create cluster dashboards.
+Prometheus is running [locally](http://localhost:9090/graph); you will need to configure a datasource in [graphana](http://localhost:3000/) to create cluster dashboards.
 
 Grafana default user and password is a`admin/admin`
 
